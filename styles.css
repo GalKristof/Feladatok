@@ -11,7 +11,7 @@ body{
     position: absolute;
     width: 298px;
     height: 611px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 
@@ -107,8 +107,63 @@ input, input::placeholder, input.form-control{
     margin-bottom: 1px;
 }
 
-/* Elfelejtett jelszó */
+/* Elfelejtett jelszó, emlékezz rám */
 
 .forgetpassword:hover{
     text-decoration: underline;
+}
+
+.forgetpassword{
+    margin-bottom: 2.03125rem;
+}
+
+.rememberme{
+    margin-top: 2.03125rem;
+}
+
+
+/* Bejelentkezés gomb */
+
+.login-panel{
+    text-align: center;
+}
+
+button.login{
+    width: 16.25rem;
+    height: 2.5rem;
+    background-color: #006633;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 44px;
+    margin-bottom: 0.9375rem;
+}
+
+/* VAGY elválasztóvonal */
+
+.line-between{
+    text-align: center;
+    text-transform: uppercase;
+    color: #55AE3A;
+    font-size: 0.5625rem;
+    margin-top: 0.9375rem;
+    position: relative;
+}
+
+.or::before, .or::after{
+    position: absolute;
+    content: '';
+    width: 7.25rem;
+    height: 1px;
+    background-color: #55AE3A;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.or::before{
+    left: 1px;
+}
+
+.or::after{
+    right: 1px;
 }
