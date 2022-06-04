@@ -1,0 +1,17 @@
+* {
+    padding: 1px;
+    margin: 1px;
+}
+
+body{
+    font-size: 16px;
+}
+
+.container{
+    position: absolute;
+    width: 298px;
+    height: 611px;
+    border: 1px solid black;
+}
+
+
