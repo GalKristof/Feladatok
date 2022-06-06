@@ -1,8 +1,8 @@
 @import url("font-awesome/css/fontawesome-all.min.css"); /* FA CSS import */
 
 * {
-    padding: 1px;
-    margin: 1px;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -85,6 +85,7 @@ button.enter{
 
 div.login-input{
     text-align: center;
+    position: relative;
 }
 
 input{
@@ -102,13 +103,43 @@ input, input::placeholder, input.form-control{
 
 #email{
     margin-top: 1.875rem;
-    margin-bottom: 1.03125rem;
+    margin-bottom: 0;
 }
 
 #password{
-    margin-top: 1.03125rem;
+    margin-top: 2.0625rem;
     margin-bottom: 1px;
 }
+
+#email:invalid{
+    border-color: #EF3A43;
+}
+
+.email-invalid{
+    text-align: left;
+}
+
+#email:invalid + .email-invalid::after{
+    content: "Hibás e-mail cím";
+    color: #EF3A43;
+    margin-left: .5rem;
+    margin-top: 0.125rem;
+    height: 1rem;
+}
+
+#email:invalid ~ #password{
+    margin-top: 0.9rem;
+}
+
+.pass-eye{
+    position: absolute;
+    bottom: 0.65625rem;
+    right: 1.3125rem;
+    width: 1.375rem;
+    height: 0.9375rem;
+    color: #55AE3A;
+}
+
 
 /* Elfelejtett jelszó, emlékezz rám, switch toggle */
 
@@ -118,12 +149,15 @@ input, input::placeholder, input.form-control{
 
 .forgetpassword{
     margin-bottom: 2.03125rem;
+    margin-left: .5rem;
 }
 
 .toggle {
     position: relative;
     display: inline-block;
     margin-top: 2.03125rem;
+    left: 0.875rem;
+    margin-bottom: 1.125rem;
 }
   
 .toggle input { 
@@ -171,14 +205,6 @@ input:checked + .slider:before {
     -webkit-transform: translateX(0.8125rem);
     -ms-transform: translateX(0.8125rem);
     transform: translateX(0.8125rem);
-}
-  
-.slider.round {
-    border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
 }
 
 p.rememberme{
@@ -281,4 +307,12 @@ button.login{
 
 .button-socialmedia.gmail::before{
     content: "\f1a0";
+}
+
+/* Buttons */
+
+.button-socialmedia:hover, button:hover{
+    background-color: #EF3A43;
+    border-color: #EF3A43;
+    color: white;
 }
