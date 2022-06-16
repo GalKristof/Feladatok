@@ -1,4 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 5.3125rem;
+    background-color: #006633;
+    display: flex;
+    align-items: center;
+}
+
+.menu-texts, .menu-icons{
+    display: none;
+}
+
+.menu{
+    padding-inline: 1rem;
+    font-size: 2rem;
+}
+
+.logo{
+    background-image: url("https://www.ajandeknyomda.com/!common_design/custom/ajandeknyomda.unas.hu/element/layout_hu_header_logo-300x80_1_default.png?time=1621968188");
+    background-size: cover;
+    height: 3.1rem;
+    width: 10.5rem;
+}
+
+.logo:hover{
+    cursor: pointer;
 }
