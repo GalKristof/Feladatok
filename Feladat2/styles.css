@@ -16,6 +16,8 @@ body{
     background-color: #006633;
     display: flex;
     align-items: center;
+    padding: 0 1rem;
+    position: relative;
 }
 
 .menu-texts, .menu-icons{
@@ -23,17 +25,54 @@ body{
 }
 
 .menu{
-    padding-inline: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .logo{
     background-image: url("https://www.ajandeknyomda.com/!common_design/custom/ajandeknyomda.unas.hu/element/layout_hu_header_logo-300x80_1_default.png?time=1621968188");
     background-size: cover;
-    height: 3.1rem;
-    width: 10.5rem;
+    height: 2.511rem;
+    width: 8.505rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.logo:hover{
-    cursor: pointer;
+.menu:hover, .logo:hover{
+    cursor: pointer
+}
+
+.notification{
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+}
+
+.profile-pic{
+    width: 2rem;
+    height: 2rem;
+    outline: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+/* RESZPONZIVITÁS */
+
+@media(min-width: 425px)
+{
+    .logo{
+        height: 3.1rem;
+        width: 10.5rem;
+    }
+    .menu, .notification{
+        font-size: 2rem;
+    }
+    .notification{
+        padding-inline: 1.5rem;
+    }
 }
