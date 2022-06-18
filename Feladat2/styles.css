@@ -137,12 +137,63 @@ body{
 
 @media(min-width: 1024px)
 {
+    .logo{
+        margin-right: 2rem;
+        height: 3.1rem;
+        width: 13.75rem;
+    }
+
     .menu-texts{
         display: block;
+        font-size: 1.2rem;
+        width: 100%;
     }
-    
+
     .menu-texts>a{
         color: white;
         text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        width: min-content;
+        margin-right: .5rem;
+    }
+
+    .menu-text:before{
+        display: inline-block;
+        position: static;
+        width: min-content;
+        font-size: 1.5rem;
+        background: none;
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        margin-right: .5rem;
+        font-weight: 900;
+    }
+
+    .interviews:before{
+        content: '\f130';
+    }
+    
+    .portraits:before{
+        content: '\f3e0';
+    }
+
+    .analyzes:before{
+        content: '\f643';
+    }
+
+    .culture:before{
+        content: '\f02d';
+    }
+
+    .menu-text:hover{
+        text-decoration: underline;
+    }
+
+}
+
+@media(min-width: 1440px)
+{
+    .logo{
+        height: 2.9rem;
+        width: 12rem;
     }
 }
