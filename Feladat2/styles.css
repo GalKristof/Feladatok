@@ -242,6 +242,57 @@ body{
         display: inline-block;
     }
 
+    .search-bar{
+        width: 53rem;
+        height: 5rem;
+        position: relative;
+    }
+
+    .search-bar>input{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 2.75rem;
+        border: 1px solid black;
+        background: #B1DDC4;
+        font-size: 2rem;
+        font-family: "Roboto", sans-serif;
+        color: #006633;
+        padding-left: 5.6rem;
+    }
+
+    .search-bar>input::placeholder{
+        color: #55AE3A;
+    }
+
+    .search-bar::before{
+        content: '\f002';
+        font-family: "Font Awesome 5 Pro", sans-serif;
+        display: block;
+        position: absolute;
+        font-size: 2.5rem;
+        color: #006633;
+        z-index: 99;
+        font-weight: 900;
+        top: 50%;
+        left: 2.25%;
+        transform: translateY(-50%);
+    }
+
+    .search-bar::after{
+        content: '';
+        background: white;
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 80%;
+        left: 8.75%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
 }
 
