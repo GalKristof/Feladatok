@@ -193,10 +193,55 @@ body{
     }
 
 
+    /* Második sorra vonatkozó CSS */ 
 
     .second-container{
         display: block;
     }
+
+    .nav-circle-element-block{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        border: none;
+        background-color: #55AE3A;
+        position: relative;
+    }
+
+    .person{
+        width: 4.5rem;
+        height: 4.5rem;
+        background-color: transparent;
+
+    }
+    .person>img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        outline: 1px solid white;
+        position: absolute;
+    }
+
+    .nav-circle-element{
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .theme>img, .documents>img{
+        filter: brightness(0) invert(1);
+    }
+
+    .right-side{
+        float: right;
+    }
+
+    .current-elements, .date, .nav-circle-element-block, .search-bar, .right-side{
+        display: inline-block;
+    }
+
 
 }
 
