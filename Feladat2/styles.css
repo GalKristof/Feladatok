@@ -243,7 +243,7 @@ body{
     }
 
     .search-bar{
-        width: 53rem;
+        width: 27rem;
         height: 5rem;
         position: relative;
     }
@@ -278,7 +278,7 @@ body{
         z-index: 99;
         font-weight: 900;
         top: 50%;
-        left: 2.25%;
+        left: 1rem;
         transform: translateY(-50%);
     }
 
@@ -289,7 +289,7 @@ body{
         position: absolute;
         width: 2px;
         height: 80%;
-        left: 8.75%;
+        left: 4.5rem;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -301,5 +301,9 @@ body{
     .logo{
         height: 2.9rem;
         width: 12rem;
+    }
+
+    .search-bar{
+        width: 53rem;
     }
 }
