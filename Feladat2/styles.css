@@ -58,7 +58,13 @@ body{
     right: 3.5rem;
     top: 50%;
     transform: translateY(-50%);
+    transition: outline .1s ease-in;
 }
+
+.profile-pic:hover{
+    outline: 5px solid #cc7777;
+}
+
 
 .menu-icons>a:last-of-type{
     display: block;
@@ -206,6 +212,7 @@ body{
         border: none;
         background-color: #55AE3A;
         position: relative;
+        transition: border-radius .1s ease-in;
     }
 
     .person{
@@ -220,6 +227,7 @@ body{
         border-radius: 50%;
         outline: 1px solid white;
         position: absolute;
+        transition: outline .1s ease-in-out;
     }
 
     .nav-circle-element{
@@ -228,6 +236,14 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .nav-circle-element-block:hover{
+        border-radius: 10%;
+    }
+
+    .person>img:hover{
+        outline: 5px solid #cc7777;
     }
 
     .theme>img, .documents>img{
@@ -262,10 +278,12 @@ body{
         font-family: "Roboto", sans-serif;
         color: #006633;
         padding-left: 5.6rem;
+        font-weight: 900;
     }
 
     .search-bar>input::placeholder{
         color: #55AE3A;
+        font-weight: 100;
     }
 
     .search-bar::before{
