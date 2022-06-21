@@ -61,6 +61,11 @@ body{
     transition: outline .1s ease-in;
 }
 
+.log-out{
+    display: none;
+}
+
+
 .profile-pic:hover{
     outline: 5px solid #cc7777;
 }
@@ -109,8 +114,25 @@ body{
         display: none;
     }
 
-    .menu-icons>a{
+    .menu-icons>a, .log-out, .log-out>a{
         display: block;
+    }
+
+    .log-out{
+        color: white;
+        border-radius: 100%;
+        position: absolute;
+        right: .75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: outline .1s ease-in;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .log-out>a{
+        color: white;
+        text-decoration: none;
     }
 
     .menu-icons>a:last-of-type{
@@ -119,14 +141,14 @@ body{
     }
 
     .profile-pic{
-        right: 1rem;
+        right: 3.5rem;
     }
 
     .menu-icons{
         font-size: 2rem;
         position: absolute;
         top: 50%;
-        right: 4.5rem;
+        right: 7rem;
         transform: translateY(-50%);
         display: flex;
         
