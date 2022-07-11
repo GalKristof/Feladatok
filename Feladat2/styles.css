@@ -12,12 +12,13 @@ body{
 
 .container{
     width: 100%;
-    height: 5.3125rem;
     background-color: #006633;
     display: flex;
     align-items: center;
     padding: 0 1rem;
     position: relative;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
 }
 
 .menu-texts, .menu-icons>a{
@@ -30,14 +31,14 @@ body{
 }
 
 .logo{
-    background-image: url("https://www.ajandeknyomda.com/!common_design/custom/ajandeknyomda.unas.hu/element/layout_hu_header_logo-300x80_1_default.png?time=1621968188");
-    background-size: cover;
-    height: 2.511rem;
-    width: 8.505rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#nav-logo{
+    width: 6.5rem;
 }
 
 .menu:hover, .logo:hover{
@@ -50,8 +51,8 @@ body{
 }
 
 .profile-pic{
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
     outline: 1px solid white;
     border-radius: 100%;
     position: absolute;
@@ -80,8 +81,19 @@ body{
     transform: translateY(-50%);
 }
 
-.second-container{
+.bottom-container{
     display: none;
+}
+
+.menu-icons>a:hover{
+    color: #cc7777;
+    transition: color .2s ease-in-out;
+}
+
+.menu>i:hover{
+    transition: transform .2s ease-in-out, color .1s ease-in-out;
+    transform: scale(1.1);
+    color: #BBDDFF;
 }
 
 
@@ -89,10 +101,16 @@ body{
 
 @media(min-width: 425px)
 {
-    .logo{
-        height: 3.1rem;
-        width: 10.5rem;
+
+    .container{
+        padding-top: .3rem;
+        padding-bottom: .3rem;
     }
+
+    #nav-logo{
+        width: 7.5rem;
+    }
+
     .menu, .notification, .menu-icons>a:last-of-type{
         font-size: 2rem;
     }
@@ -102,14 +120,20 @@ body{
 
     .profile-pic{
         right: 4rem;
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
 }
 
 @media(min-width: 768px)
 {
+
+    .container{
+        padding-top: .55rem;
+        padding-bottom: .55rem;
+    }
+
     .notification{
         display: none;
     }
@@ -163,22 +187,24 @@ body{
         position: static;
         transform: translate(0, 0);
         margin-left: 1rem;
+    } 
+
+    #nav-logo{
+        width: 10rem;
     }
 }
 
 
 @media(min-width: 1024px)
 {
-    .logo{
-        margin-right: 2rem;
-        height: 3.1rem;
-        width: 13.75rem;
+    #nav-logo{
+        width: 11.5rem;
     }
 
     .menu-texts{
         display: block;
         font-size: 1.2rem;
-        width: 100%;
+        width: max-content;
     }
 
     .menu-texts>a{
@@ -200,20 +226,13 @@ body{
         font-weight: 900;
     }
 
-    .interviews:before{
-        content: '\f130';
-    }
-    
-    .portraits:before{
-        content: '\f3e0';
+    .menu-fa{
+        margin-right: 1ch;
     }
 
-    .analyzes:before{
-        content: '\f643';
-    }
-
-    .culture:before{
-        content: '\f02d';
+    .exit-fa:hover{
+        color: #BBDDFF;
+        transition: color .1s ease-in-out;
     }
 
     .menu-text:hover{
@@ -223,7 +242,7 @@ body{
 
     /* Második sorra vonatkozó CSS */ 
 
-    .second-container{
+    .bottom-container{
         display: block;
     }
 
@@ -235,6 +254,7 @@ body{
         background-color: #55AE3A;
         position: relative;
         transition: border-radius .1s ease-in;
+        margin-inline: 0.75rem;
     }
 
     .person{
@@ -281,9 +301,10 @@ body{
     }
 
     .search-bar{
-        width: 25rem;
+        width: 19rem;
         height: 5rem;
         position: relative;
+        margin-right: 0.875rem;
     }
 
     .search-bar>input{
@@ -332,6 +353,10 @@ body{
         left: 4.5rem;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .search-bar:focus, .search-bar>input:focus{
+        outline: none;
     }
 
     .date{
@@ -403,14 +428,21 @@ body{
 
 }
 
+@media(min-width: 1200px)
+{
+    .menu-texts{
+        margin-left: 2.5rem;
+    }
+}
+
 @media(min-width: 1440px)
 {
-    .logo{
+    /* .logo{
         height: 2.9rem;
         width: 12rem;
-    }
+    } */
 
     .search-bar{
-        width: 50rem;
+        width: 45rem;
     }
 }
