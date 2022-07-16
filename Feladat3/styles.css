@@ -1,5 +1,77 @@
+/* CSS RESET és alapok */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/* CSS RESET és alapok */
+
+
+
+/* User-containerre vonatkozó rész */
+
+.user-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* User-containerre vonatkozó rész */
+
+
+/* Betűkkel kapcsolatos részleg (méretek, stílusok stb) */
+
+h4{
+    text-transform: uppercase;
+}
+
+/* Betűkkel kapcsolatos részleg (méretek, stílusok stb) */
+
+
+/* SECTION MAIN részleg*/
+
+section.main>.user-pic>img{
+    width: 234px;
+    height: 234px;
+    border: 10px solid #006633;
+    border-radius: 200px;
+}
+
+/* SECTION MAIN részleg*/
+
+/* SECTION user-data (felhasználó adatok) részleg*/
+/* SECTION user-data (felhasználó adatok) részleg*/
+
+/* SECTION user-contact (felhasználó elérhetőségek) részleg*/
+/* SECTION user-contact (felhasználó elérhetőségek) részleg*/
+
+/* SECTION user-sports (felhasználó sportok) részleg*/
+/* SECTION user-sports (felhasználó sportok) részleg*/
+
+/* SECTION user-locations (felhasználó helyszínek) részleg*/
+/* SECTION user-locations (felhasználó helyszínek) részleg*/
+
+/* SECTION user-intro (felhasználó bemutatkozás) részleg*/
+/* SECTION user-intro (felhasználó bemutatkozás) részleg*/
+
+/* Reszponzivitás */
+
+@media(min-width: 320px)
+{
+
+}
+
+/* Reszponzivitás */
+
+
+
+
