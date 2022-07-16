@@ -7,10 +7,50 @@
     list-style: none;
 }
 
-body {
+body, html {
     text-align: center;
     font-family: "Roboto", sans-serif;
+    font-size: 10px;
 }
+
+section{
+    width: 456px;
+    margin-top: 20px;
+}
+
+.section-title-box{
+    background: #006633;
+    margin-bottom: 2px;
+    height: 32px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.labels-box{
+    margin-top: 12px;
+
+    /* display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    */
+} 
+
+.label{
+    height: 28px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    background: #006633;
+    border-radius: 200px;
+    width: max-content;
+    padding: 8px 4px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    align-items: center;
+}
+
+
 
 /* CSS RESET és alapok */
 
@@ -19,10 +59,11 @@ body {
 /* User-containerre vonatkozó rész */
 
 .user-container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* User-containerre vonatkozó rész */
@@ -30,12 +71,62 @@ body {
 
 /* Betűkkel kapcsolatos részleg (méretek, stílusok stb) */
 
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #006633;
+}
+
+h2{
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #006633;
+}
+
 h4{
+    position: absolute;
     text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 32px;
+    min-width: max-content;
+}
+
+li{
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #006633;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p.introduction{
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: justify;
+    color: #006633;
+    margin-inline: 8px;
 }
 
 /* Betűkkel kapcsolatos részleg (méretek, stílusok stb) */
 
+/* A címek előtte, utána lévő zöld csík */
+h4::before{
+    content: "";
+    display: inline-block;
+    background: #fff;
+    top: -4px;
+    width: calc(100% + 20px);
+    height: 32px;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    transform: skew(-30deg) translateX(-50%);
+} 
+/* A címek előtte, utána lévő zöld csík */
 
 /* SECTION MAIN részleg*/
 
@@ -46,31 +137,11 @@ section.main>.user-pic>img{
     border-radius: 200px;
 }
 
-/* SECTION MAIN részleg*/
-
-/* SECTION user-data (felhasználó adatok) részleg*/
-/* SECTION user-data (felhasználó adatok) részleg*/
-
-/* SECTION user-contact (felhasználó elérhetőségek) részleg*/
-/* SECTION user-contact (felhasználó elérhetőségek) részleg*/
-
-/* SECTION user-sports (felhasználó sportok) részleg*/
-/* SECTION user-sports (felhasználó sportok) részleg*/
-
-/* SECTION user-locations (felhasználó helyszínek) részleg*/
-/* SECTION user-locations (felhasználó helyszínek) részleg*/
-
-/* SECTION user-intro (felhasználó bemutatkozás) részleg*/
-/* SECTION user-intro (felhasználó bemutatkozás) részleg*/
-
-/* Reszponzivitás */
-
-@media(min-width: 320px)
-{
-
+section.main{
+    margin-top: 0;
 }
 
-/* Reszponzivitás */
+/* SECTION MAIN részleg*/
 
 
 
