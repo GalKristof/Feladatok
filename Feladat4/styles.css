@@ -1,0 +1,16 @@
+/* CSS RESET és alapok */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body, html {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+}
+
+/* CSS RESET és alapok */
