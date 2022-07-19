@@ -15,6 +15,20 @@ body, html {
 
 /* CSS RESET és alapok */
 
+/* profile-containerre vonatkozó rész */
+
+.profile-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 298px;
+}
+
+/* profile-containerre vonatkozó rész */
+
+
 /* Kép beállításai */
 
 .main>.image>img{
@@ -32,9 +46,15 @@ h1{
     font-weight: 700;
 }
 
+ul{
+    text-align: left;
+}
+
 li{
     font-size: 2rem;
     font-weight: 400;
+    display: inline-block;
+    margin: 0 45px 4px 8px;
 }
 
 p{
@@ -88,6 +108,9 @@ section.follow>button.follow-button{
     border: none;
     transition: background-color .15s ease-in-out;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "Work Sans", sans-serif;
 }
 
 button.follow-button:focus{
@@ -101,3 +124,88 @@ section.follow>button.follow-button:hover{
 
 /* Követés gomb beállítása */
 
+/* Profil információk */
+
+.data-listitem-icon{
+    background-color: #55AE3A;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    transition: background-color .15s ease-in-out;
+}
+
+.data-listitem-icon:hover{
+    background-color: #006633;
+}
+
+.data-listitem-icon>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+}
+
+/* Profil információk */
+
+/* Kapcsolatok */
+
+.contact-item-text{
+    display: none;
+}
+
+.contact-item-icon{
+    font-size: 2.3rem;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-block{
+    display: inline-block;
+    background-color: #006633;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    transition: background-color .15s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-block:not(:first-of-type)
+{
+    margin-left: 4px;
+}
+
+.contact-block:hover{
+    background-color: #229955;
+}
+
+section.contact{
+    /* margin-inline: 7px; */
+}
+
+
+/* Kapcsolatok */
+
+
+ @media(min-width: 1366px)
+{
+    .profile-container{
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contact-item-text{
+        display: block;
+    }
+} 
