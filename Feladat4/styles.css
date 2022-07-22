@@ -216,11 +216,64 @@ section.contact{
 
     .follow.desktop{
         display: block;
+        text-align: right;
     }
 
     .follow.mobile{
         display: none;
     }
+
+    h1{
+        width: max-content;
+        margin: auto;
+    }
+    li{
+        display: block;
+        width: max-content;
+    }
+
+    .info-name{
+        margin-bottom: 24px;
+    }
+
+    section.follow{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    section.info{
+        margin-left: 18px;
+    }
+
+    .contact-elements{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 8px;
+    }
+
+    section.contact{
+        margin-left: 55px;
+    }
+
+    section.description{
+        margin-top: 13px;
+        margin-bottom: 11px;
+        margin-inline: 0;
+    }
+
+    .contact-item-text{
+        display: block;
+        color: black;
+        width: max-content;
+        margin-left: calc(44px + 5px); /* 44px a pos:absolute icon mérete + 5px távolság */
+        font-size: 18px;
+        margin-top: 25%;
+    }
+
+    .contact-block:not(:first-of-type){
+        margin-left: 0;
+    }
+
 } 
 
 /* Reszponzivitás */
