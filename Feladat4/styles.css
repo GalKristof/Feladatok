@@ -122,6 +122,10 @@ section.follow>button.follow-button:hover{
     background-color: #229955;
 }
 
+.follow.desktop{
+    display: none;
+}
+
 /* Követés gomb beállítása */
 
 /* Profil információk */
@@ -197,6 +201,7 @@ section.contact{
 /* Kapcsolatok */
 
 
+/* Reszponzivitás */
  @media(min-width: 1366px)
 {
     .profile-container{
@@ -208,4 +213,14 @@ section.contact{
     .contact-item-text{
         display: block;
     }
+
+    .follow.desktop{
+        display: block;
+    }
+
+    .follow.mobile{
+        display: none;
+    }
 } 
+
+/* Reszponzivitás */
